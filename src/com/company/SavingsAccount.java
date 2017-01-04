@@ -2,8 +2,11 @@ package com.company;
 
 public class SavingsAccount extends BankAccount {
 
-    public SavingsAccount (double amount, double rate) {
-        super(amount);
+    // Implements all BankAccount methods.
+    // This is because this extends from the BankAccount class.
+
+    public SavingsAccount (double amt, double rate) {
+        super(amt); // Amount is thrown to BankAccount.
         interestRate = rate;
     }
 
